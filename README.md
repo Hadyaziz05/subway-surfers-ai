@@ -5,8 +5,7 @@ This repository contains scripts for automating gameplay in *Subway Surfers* usi
 ## Table of Contents
 - [play.py](#playpy) - Real-time automation of Subway Surfers
 - [model_and_prediction.py](#model_and_predictionpy) - Model prediction and keypress simulation
-- [model.py](#modelpy) - Dataset collection tool
-- [model_training.py](#model_trainingpy) - Model training using MobileNetV2
+- [model.py](#model_trainingpy) - Model training using MobileNetV2
 - [Improvements & Debugging Suggestions](#improvements--debugging-suggestions)
 
 ---
@@ -44,19 +43,6 @@ This script handles loading the trained model, processing images, predicting act
 ---
 
 ## model.py
-
-This script is a dataset collection tool that allows you to gather training data (screenshots) for each action (up, down, left, right).
-
-### Features:
-- *Screenshot Capture & Saving*:  
-  Continuously captures screenshots and saves them in folders corresponding to the key pressed. The folders are named based on the direction of movement (e.g., up, down, left, right).
-  
-- *Key Mapping*:  
-  Screenshots are saved based on the key pressed (e.g., pressing the 'up' key saves the image in the up folder).
-
----
-
-## model_training.py
 
 This script defines the model training pipeline using *MobileNetV2* as a base. It performs data augmentation and fine-tunes the model.
 
